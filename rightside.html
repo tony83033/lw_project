@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Right side</title>
+	<style>
+		/* Add some basic styling to make the page look decent */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		/* Style the bottom right side box */
+		.bottom-right-box {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 1480px;
+			height: 200px;
+		}
+		
+		/* Style the upper right side box */
+		.upper-right-box {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 1480px;
+			height: 100px;
+		}
+		
+		.path-option {
+			margin-bottom: 10px;
+		}
+		
+		.path-option label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		.path-option input[type="radio"] {
+			margin-right: 10px;
+		}
+		
+		.star-rating {
+			font-size: 24px;
+			color: #ffd700;
+		}
+		
+		.account-option {
+			margin-bottom: 10px;
+		}
+		
+		.account-option label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		.account-option a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		
+		.account-option a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<!-- Upper right side box -->
+	<div class="upper-right-box">
+		<h2>Account</h2>
+		<div class="account-option">
+			<label><a href="#">Profile</a></label>
+		</div>
+		<div class="account-option">
+			<label><a href="#">Settings</a></label>
+		</div>
+		<div class="account-option">
+			<label><a href="#">Logout</a></label>
+		</div>
+	</div>
+	
+	<!-- Bottom right side box -->
+	<div class="bottom-right-box">
+		<h2>Safest Path Options</h2>
+		<div class="path-option">
+			<label>Path 1</label>
+			<input type="radio" name="path" value="path1">
+			<span class="star-rating">&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</span>
+			<p>(4.5/5)</p>
+		</div>
+		<div class="path-option">
+			<label>Path 2</label>
+			<input type="radio" name="path" value="path2">
+			<span class="star-rating">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+			<p>(5/5)</p>
+		</div>
+		<!-- Add more path options here -->
+	</div>
+</body>
+</html>
